@@ -1,4 +1,4 @@
-import DeleteButton from "../buttons/deleteButton";
+import DeleteButton from "../buttons/DeleteButton";
 import PropTypes from "prop-types";
 import styles from "./Footer.module.css";
 const Footer = ({
