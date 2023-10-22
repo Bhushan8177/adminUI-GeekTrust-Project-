@@ -21,15 +21,19 @@ const Footer = ({
   const pageNumbers = handlePageNumbers();
   const handlePreviousPage = () => {
     setPageCount((prev) => prev - 1);
+    setActiveButton((prev) => prev - 1);
   };
   const handleNextPage = () => {
     setPageCount((prev) => prev + 1);
+    setActiveButton((prev) => prev + 1);
   };
   const handleFirstPage = () => {
     setPageCount(1);
+    setActiveButton(1);
   };
   const handleLastPage = () => {
     setPageCount(totalPages);
+    setActiveButton(totalPages);
   };
   const handleCurrentPage = (page) => {
     setPageCount(page);
