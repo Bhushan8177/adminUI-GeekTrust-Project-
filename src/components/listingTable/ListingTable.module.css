@@ -1,0 +1,33 @@
+.deleteIcon {
+  color: rgb(227, 53, 88);
+  cursor: pointer;
+  font-size: large;
+}
+
+.editIcon {
+  font-size: large;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 8px 30px;
+}
+
+tbody tr:hover {
+  background-color: lightgrey;
+}
+
+.noData {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 120%;
+}
