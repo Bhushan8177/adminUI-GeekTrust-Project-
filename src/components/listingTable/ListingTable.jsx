@@ -7,6 +7,7 @@ import { Footer } from "../main";
 import Modal from "../modal/Modal";
 import styles from "./ListingTable.module.css";
 import NoDataFound from "../noDataFound/NoDataFound";
+
 const ListingTable = ({
   tableData,
   startIndex,
@@ -30,7 +31,6 @@ const ListingTable = ({
   // Checkbox Functions
   const handleRowCheckboxChange = (e, id) => {
     const checked = e.target.checked;
-    console.log(checked);
     if (checked) {
       setSelectedRows([...selectedRows, id]);
     } else {
@@ -148,7 +148,7 @@ const ListingTable = ({
             </th>
           )}
           {filteredData?.slice(startIndex, endIndex).map((member) => (
-            <tr key={member.id}>
+            <tr key={member.id} className={(selectedRows.includes(member.id)) ? styles.rowSelected : ""}>
               <td>
                 <input
                   type="checkbox"

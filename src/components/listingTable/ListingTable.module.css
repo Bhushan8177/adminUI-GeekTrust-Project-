@@ -31,3 +31,7 @@ tbody tr:hover {
   justify-content: center;
   margin-left: 120%;
 }
+
+.rowSelected{
+  background-color: lightgrey;
+}

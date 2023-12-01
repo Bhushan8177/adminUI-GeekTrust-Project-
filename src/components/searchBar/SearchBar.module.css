@@ -1,11 +1,26 @@
-.wrapper {
+.wrapper{
+  display : flex;
+  border : solid 1px rgb(216, 204, 204);
+  padding: 0.5rem 0.2rem;
+  margin-bottom: 0.5rem;   
+  width : 400px;
+  border-radius: 10px;
+}
+
+.inputWrapper {
   width: 100%;
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem;
-  border: solid 1px rgb(216, 204, 204);
+  border: none;
+} 
+.inputWrapper:focus {
+  outline: none;
 }
 
 ::placeholder {
   /* Firefox, Chrome, Opera */
   color: rgb(190, 190, 190);
+}
+.icon{
+  width: 15px;
+  padding-left: 10px;
+  cursor: pointer;
 }
